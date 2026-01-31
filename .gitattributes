@@ -1,0 +1,213 @@
+# HomeWarehouse .gitattributes
+# Ensure consistent line endings across platforms
+
+# Auto detect text files and normalize to LF
+* text=auto eol=lf
+
+# ============================================
+# Source Code
+# ============================================
+
+# Java
+*.java text diff=java eol=lf
+*.kt text diff=kotlin eol=lf
+*.kts text diff=kotlin eol=lf
+*.gradle text eol=lf
+*.gradle.kts text eol=lf
+
+# JavaScript/TypeScript
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+
+# Web files
+*.html text diff=html eol=lf
+*.css text diff=css eol=lf
+*.scss text diff=css eol=lf
+*.sass text diff=css eol=lf
+*.less text diff=css eol=lf
+
+# ============================================
+# Configuration Files
+# ============================================
+
+# YAML
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# JSON
+*.json text eol=lf
+*.json5 text eol=lf
+
+# XML
+*.xml text eol=lf
+*.xsd text eol=lf
+*.xsl text eol=lf
+
+# Properties
+*.properties text eol=lf
+
+# Environment files
+.env* text eol=lf
+
+# ============================================
+# Documentation
+# ============================================
+
+*.md text diff=markdown eol=lf
+*.markdown text diff=markdown eol=lf
+*.txt text eol=lf
+*.adoc text eol=lf
+*.rst text eol=lf
+
+# ============================================
+# Scripts
+# ============================================
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+*.fish text eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# ============================================
+# Docker
+# ============================================
+
+Dockerfile text eol=lf
+Dockerfile.* text eol=lf
+*.dockerfile text eol=lf
+.dockerignore text eol=lf
+docker-compose*.yml text eol=lf
+
+# ============================================
+# Infrastructure as Code
+# ============================================
+
+# Terraform
+*.tf text eol=lf
+*.tfvars text eol=lf
+*.hcl text eol=lf
+
+# Kubernetes
+*.k8s.yml text eol=lf
+*.k8s.yaml text eol=lf
+
+# Helm
+*.tpl text eol=lf
+
+# ============================================
+# Build Files
+# ============================================
+
+# Gradle
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+
+# Maven
+mvnw text eol=lf
+mvnw.cmd text eol=crlf
+
+# Make
+Makefile text eol=lf
+makefile text eol=lf
+*.mk text eol=lf
+
+# ============================================
+# Git Files
+# ============================================
+
+.gitattributes text eol=lf
+.gitignore text eol=lf
+.gitmodules text eol=lf
+
+# ============================================
+# Binary Files
+# ============================================
+
+# Images
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.webp binary
+*.avif binary
+
+# Fonts
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.tgz binary
+*.rar binary
+*.7z binary
+*.jar binary
+*.war binary
+
+# Executables
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+
+# Documents
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+
+# Media
+*.mp4 binary
+*.mov binary
+*.avi binary
+*.mp3 binary
+*.wav binary
+
+# Databases
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+
+# Certificates & Keys
+*.p12 binary
+*.jks binary
+*.keystore binary
+*.truststore binary
+*.pfx binary
+*.pem binary
+*.key binary
+*.crt binary
+*.cer binary
+
+# ============================================
+# Special Handling
+# ============================================
+
+# Ignore diffs for generated files
+package-lock.json -diff
+yarn.lock -diff
+pnpm-lock.yaml -diff
+
+# Linguist overrides (for GitHub language stats)
+*.sql linguist-detectable=true
+*.md linguist-detectable=false
+*.json linguist-generated=false

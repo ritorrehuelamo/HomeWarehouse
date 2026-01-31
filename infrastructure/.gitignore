@@ -1,0 +1,54 @@
+# Infrastructure specific .gitignore
+
+# Docker
+docker-compose.override.yml
+
+# Docker volumes data
+docker/postgres/data/
+docker/redis/data/
+docker/rabbitmq/data/
+docker/temporal/data/
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+!terraform.tfvars.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform providers
+.terraform.lock.hcl
+
+# Kubernetes
+kubeconfig
+kubeconfig.yml
+*.kubeconfig
+
+# Helm
+charts/*.tgz
+.deploy
+
+# Secrets
+secrets/
+*.key
+*.pem
+*.crt
+*.cer
+
+# Environment specific
+.env
+.env.local
+.env.*.local
+
+# Generated files
+generated/
+
+# Backups
+*.backup
+backups/

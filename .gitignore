@@ -1,0 +1,323 @@
+# HomeWarehouse .gitignore
+# ============================================
+# Claude AI
+# ============================================
+.claude
+
+# ============================================
+# Security & Secrets
+# ============================================
+# NEVER commit secrets, keys, or credentials
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+*.truststore
+.env
+.env.local
+.env.*.local
+secrets/
+secrets.yml
+application-local.yml
+application-secret.yml
+jwt-key*
+*.crt
+*.cer
+
+# ============================================
+# Backend - Java/Gradle
+# ============================================
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+.gradletasknamecache
+
+# Spring Boot
+spring-boot-devtools.properties
+
+# Compiled class files
+*.class
+*.jar
+*.war
+*.ear
+!gradle/wrapper/*.jar
+!build-logic/**/*.jar
+
+# Log files
+*.log
+logs/
+log/
+
+# Package Files
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# ============================================
+# Frontend - Node.js/React/Vite
+# ============================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build output
+dist/
+dist-ssr/
+*.local
+.vite/
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Environment
+.env.production
+.env.staging
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ============================================
+# IDEs
+# ============================================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Eclipse
+.settings/
+.project
+.classpath
+.factorypath
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+
+# ============================================
+# Operating System
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# Docker
+# ============================================
+.dockerignore
+docker-compose.override.yml
+
+# ============================================
+# Database
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# Database dumps
+*.sql
+*.dump
+
+# ============================================
+# Terraform
+# ============================================
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+!terraform.tfvars.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# ============================================
+# Kubernetes
+# ============================================
+kubeconfig
+kubeconfig.yml
+*.kubeconfig
+
+# ============================================
+# Helm
+# ============================================
+charts/*.tgz
+.deploy
+
+# ============================================
+# CI/CD
+# ============================================
+.gitlab-ci-local/
+
+# ============================================
+# Monitoring & Logs
+# ============================================
+*.hprof
+logs/
+*.gz
+prometheus/data/
+grafana/data/
+
+# ============================================
+# Testing
+# ============================================
+.testcontainers
+target/
+reports/
+test-results/
+junit/
+.pytest_cache/
+
+# ============================================
+# Temporal
+# ============================================
+temporal/data/
+
+# ============================================
+# RabbitMQ
+# ============================================
+rabbitmq/data/
+rabbitmq/log/
+
+# ============================================
+# Redis
+# ============================================
+dump.rdb
+*.rdb
+
+# ============================================
+# Backups
+# ============================================
+*.backup
+*.bak
+backup/
+backups/
+
+# ============================================
+# Temporary Files
+# ============================================
+tmp/
+temp/
+*.tmp
+*.temp
+.cache/
+
+# ============================================
+# Documentation Build
+# ============================================
+docs/_build/
+docs/.doctrees/
+site/
+
+# ============================================
+# Package Managers
+# ============================================
+package-lock.json.backup
+yarn.lock.backup
+pnpm-lock.yaml.backup
+
+# ============================================
+# Misc
+# ============================================
+.envrc
+.direnv/
+*.orig
+*.rej
+.tool-versions
+.asdf-tools-versions
